@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import type { JSX } from 'react';
 
 export default function Home(): JSX.Element {
+  const a = 1;
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -18,7 +19,7 @@ export default function Home(): JSX.Element {
           <li>
             Get started by editing <code>app/page.tsx</code>.
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>{a}</li>
         </ol>
 
         <div className={styles.ctas}>
