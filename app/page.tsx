@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import type { JSX } from 'react';
 
+
 export default function Home(): JSX.Element {
   const a = 1;
   return (
