@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { TagProps } from './Tag.props';
+import type { TagProps } from './Tag.props';
 import type { JSX } from 'react';
 import styles from './Tag.module.css';
 

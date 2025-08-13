@@ -1,7 +1,7 @@
 .tag {
   display: inline-block;
-  border-radius: 20px;
   padding: 5px 10px;
+  border-radius: 20px;
 }
 
 .s {
@@ -19,23 +19,23 @@
 }
 
 .grey {
-  background-color: #D9D9D9;
-  color: var(--white)
+  color: var(--white);
+  background-color: #D9D9D9
 }
 
 .red {
-  background-color: #DE0000;
   color: var(--white);
+  background-color: #DE0000;
 }
 
 .green {
-  background-color: var(--green-light);
   color: var(--green);
+  background-color: var(--green-light);
 }
 
 .primary {
-  border: 1px solid var(--primary);
   color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .bold {

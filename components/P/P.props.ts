@@ -1,4 +1,4 @@
-import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
+import type { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
 
 export interface PProps
   extends DetailedHTMLProps<

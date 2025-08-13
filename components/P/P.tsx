@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { PProps } from './P.props';
+import type { PProps } from './P.props';
 import type { JSX } from 'react';
 import styles from './P.module.css';
 
