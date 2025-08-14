@@ -1,11 +1,11 @@
 'use client';
 
-import { Button, Htag, P, Raiting } from '@/components';
+import { Button, Htag, P, Rating } from '@/components';
 import { useState, type JSX } from 'react';
 import { Tag } from '@/components';
 
 export default function Home(): JSX.Element {
-  const [raiting, setRaiting] = useState<number>(0);
+  const [rating, setRating] = useState<number>(0);
   return (
     <>
       <Htag tag="h1">Курсы по Photoshop</Htag>
@@ -34,8 +34,8 @@ export default function Home(): JSX.Element {
         Primary
       </Tag>
 
-      <Raiting raiting={4} />
-      <Raiting raiting={raiting} isEditable={true} setRaiting={setRaiting} />
+      <Rating rating={4} />
+      <Rating rating={rating} isEditable={true} setRating={setRating} />
     </>
   );
 }

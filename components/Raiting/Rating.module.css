@@ -1,8 +1,11 @@
-.star svg{
+.star svg {
+  width: 20px;
+  height: 20px;
   margin-right: 5px;
+  fill: #E2E2E2;
 }
 
-.filled svg{
+.filled svg {
   fill: var(--primary);
 }
 
