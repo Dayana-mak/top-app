@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google';
 import './globals.css';
 import type { JSX } from 'react';
+import { Header } from '@/components/Header/Header';
+import { Footer } from '@/components/Footer/Footer';
+import { Sidebar } from '@/components/Sidebar/Sidebar';
 
 const notoSans = Noto_Sans({
   variable: '--font-noto-sans',
@@ -20,7 +23,14 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="ru">
-      <body className={notoSans.variable}>{children}</body>
+      <body className={notoSans.variable}>
+        <Header />
+        <div>
+          <Sidebar />
+          <div>{children}</div>
+        </div>
+        <Footer />
+      </body>
     </html>
   );
 }

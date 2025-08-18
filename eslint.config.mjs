@@ -18,9 +18,11 @@ const eslintConfig = [
       'prefer-template': ['error'],
       'prefer-arrow-callback': ['error'],
       'consistent-return': 'error',
-      '@typescript-eslint/no-empty-interface': [
+      '@typescript-eslint/no-empty-object-type': [
         'error',
-        { allowSingleExtends: true },
+        {
+          allowInterfaces: 'with-single-extends',
+        }
       ],
       '@typescript-eslint/consistent-type-imports': [
         'error',
