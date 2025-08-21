@@ -24,12 +24,12 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={notoSans.variable}>
-        <Header />
-        <div>
-          <Sidebar />
-          <div>{children}</div>
+        <div className='wrapper'>
+          <Header className='header'/>
+            <Sidebar className='sidebar'/>
+            <main className='main'>{children}</main>
+          <Footer className='footer'/>
         </div>
-        <Footer />
       </body>
     </html>
   );

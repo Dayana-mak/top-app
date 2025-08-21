@@ -1,7 +1,7 @@
 :root {
   --white: #FFF;
   --black: #3B434E;
-  --grey-light: #EBEBEB;
+  --gray-light: #EBEBEB;
   --primary: #7653FC;
   --primary-hover: #4827cb;
   --red: #FC836D;
@@ -39,6 +39,55 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    ". header header ."
+    ". sidebar main ."
+    "footer footer footer footer";
+  grid-template-rows: auto 1fr auto;
+  /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+  grid-template-columns: auto 230px minmax(320px, 1200px) auto;
+  gap: 0 30px;
+  min-height: 100vh;
+
+}
+
+.header {
+  display: none;
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media screen and (width <= 768px) {
+  .wrapper {
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: minmax(320px, 1fr);
+  }
+
+    .header {
+      display: block;
+    }
+
+    .sidebar {
+      display: none;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
