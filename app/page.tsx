@@ -1,11 +1,9 @@
-'use client';
-
 import { Button, Htag, P, Rating } from '@/components';
-import { useState, type JSX } from 'react';
+import { type JSX } from 'react';
 import { Tag } from '@/components';
+import { Menu } from './components/menu';
 
 export default function Home(): JSX.Element {
-  const [rating, setRating] = useState<number>(0);
   return (
     <>
       <Htag tag="h1">Курсы по Photoshop</Htag>
@@ -35,7 +33,7 @@ export default function Home(): JSX.Element {
       </Tag>
 
       <Rating rating={4} />
-      <Rating rating={rating} isEditable={true} setRating={setRating} />
+      <Menu />
     </>
   );
 }
